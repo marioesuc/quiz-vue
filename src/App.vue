@@ -40,9 +40,9 @@ export default {
   methods: {
     next() {
       this.index++
+      console.log(this.questions[this.index])
     },
     increment(isCorrect) {
-      console.log(isCorrect)
       if (isCorrect) {
         this.numCorrect++;
       }
